@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body#qww {
+  background: linear-gradient(135deg, #0077ff, #00c2ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+form {
+  background: #ffffffee;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 550px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease forwards;
+}
+#nb {
+  position: absolute;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #0077ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+
+h3 {
+  color: #0077ff;
+  margin: 15px 0 8px;
+}
+input[type="submit"],
+input[type="reset"] {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #00c2ff;
+  transform: translateY(-2px);
+}
+
+input[type="reset"] {
+  background: #ccc;
+  color: #333;
+  margin-left: 10px;
+}
+
+input[type="reset"]:hover {
+  background: #bbb;
+  transform: translateY(-2px);
+}
+
+#xz {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #fff;
+  color: #0077ff;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+#xz:hover {
+  background: #0077ff;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 119, 255, 0.4);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

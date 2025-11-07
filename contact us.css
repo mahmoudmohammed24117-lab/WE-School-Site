@@ -1,0 +1,140 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body#zc {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0077ff, #00c2ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+#vb {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease forwards;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: slideUp 1.2s ease forwards;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #0077ff;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.input-box.textarea i {
+  top: 20px;
+  transform: none;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+.input-box textarea {
+  padding-top: 35px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #00c2ff;
+  transform: scale(1.02);
+}
+
+#kj {
+  width: 100%;
+  background: linear-gradient(90deg, #0077ff, #00c2ff);
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+
+#kj:hover {
+  background: linear-gradient(90deg, #00c2ff, #0077ff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+#lgf {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#bvc {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

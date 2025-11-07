@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body.login-body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #0f172a, #0a1d50, #541bb6);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  overflow: hidden;
+  font-size: larger;
+}
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.login-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.6);
+  text-align: center;
+  color: #f1f5f9;
+  animation: fadeIn 1s ease;
+}
+.login-title {
+  font-size: 2em;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+.login-subtitle {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #7c3aed;
+  background: transparent;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  font-size: 0.8em;
+  color: #a855f7;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #a855f7;
+  text-decoration: none;
+  text-align: center;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #c084fc;
+}
+.register-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+.register-link a {
+  color: #ec4899;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.register-link a:hover {
+  text-shadow: 0 0 10px #ec4899;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
