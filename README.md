@@ -4,6 +4,13 @@
 
 👉 **[View Live Website](https://mahmoudmohammed24117-lab.github.io/WE-School-Site/)**
 
+
+## 📸 Preview
+
+<p align="center">
+  <img src="home.png" alt="Project Preview" width="900">
+</p>
+
 A modern and responsive multi-page website for **WE School of Applied Technology**, built using **HTML** and **CSS**.
 
 ## 🚀 Features
