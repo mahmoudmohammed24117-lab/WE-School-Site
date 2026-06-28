@@ -1,5 +1,9 @@
 # 🎓 WE School Website
 
+## 🌐 Live Demo
+
+👉 **[View Live Website](https://mahmoudmohammed24117-lab.github.io/WE-School-Site/)**
+
 A modern and responsive multi-page website for **WE School of Applied Technology**, built using **HTML** and **CSS**.
 
 ## 🚀 Features
